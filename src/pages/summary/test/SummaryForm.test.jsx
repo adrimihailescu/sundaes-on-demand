@@ -19,9 +19,9 @@ test("Checkbox enables button on first click and disables on second click", () =
 	});
 	const confirmButton = screen.getByRole("button", { name: /confirm order/i });
 
-	userEvent.click(checkbox);
+	fireEvent.click(checkbox);
 	expect(confirmButton).toBeEnabled();
 
-	userEvent.click(checkbox);
+	fireEvent.click(checkbox);
 	expect(confirmButton).toBeDisabled();
 });
