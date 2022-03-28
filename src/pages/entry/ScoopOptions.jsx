@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 
 export default function ScoopOption({ name, imagePath, updateItemCount }) {
 	const handleChange = (event) => {
-		updateItemCount(name, evfent.target.value);
+		updateItemCount(name, event.target.value);
 	};
 	return (
 		<Col xs={12} sm={6} md={4} lg={3} style={{ textAlign: "center" }}>
